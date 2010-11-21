@@ -1,0 +1,20 @@
+<div id="content">
+
+<% @quotes.each do |quote| %>
+
+	<div class="entry">
+    <%= image_tag "http://www.gravatar.com/avatar.php?gravatar_id=#{Digest::MD5.hexdigest(quote.user.email).to_s}&s=50", :class => "avatar" %>
+    &#8220;<%= quote.cit %>&#8221;<br><br>
+                      ~<%= quote.source %>
+<!--    <td><%= link_to 'Show', quote %></td>
+    <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
+    <td><%= link_to 'Destroy', quote, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr> !-->
+  <div class="divider">&nbsp;</div>
+<% end %>
+
+<br />
+
+ <%= link_to 'New Quote', new_quote_path %>!
+ 
+<div class="clear">&nbsp;</div>

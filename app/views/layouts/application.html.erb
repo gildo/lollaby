@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>cit / quote database</title>
+  <meta charset="utf-8" />
+  <script src="/javascripts/typeface.js" type="text/javascript"></script>
+  <script src="/javascripts/gentilis_bold.typeface.js" type="text/javascript"></script>
+  <%= stylesheet_link_tag ("style") %>
+  <%= csrf_meta_tag %>
+</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				<a href="#home"><div id="logo" class="typeface-js" style="font-family:gentilis;font-size:50px;font-weight:bold; color:#ffffff;">cit</div></a>
+				<div id="definition"><strong>/sɪt/</strong> <i>a passage cited; quotation.</i></div>
+				<div id="navigation"><% if user_signed_in? %>  <%= current_user.email %> | 
+    <%= link_to "Sign out", destroy_user_session_path %>  
+  <% else %>  
+    <%= link_to "Sign up", new_user_registration_path %> or  
+    <%= link_to "Sign in", new_user_session_path %>  
+  <% end %>  </div>
+			</div>
+
+<%= yield %>
+		</div>
+		<div id="footer">? lol</div>
+</body>
+</html>

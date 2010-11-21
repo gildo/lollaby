@@ -1,0 +1,136 @@
+﻿body, html {
+	font-family:verdana,tahoma,helvetica;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	font-size:20px;
+	background-image:url(page_bg.png);
+	background-color:#FFFFC5;
+
+}
+
+
+
+#page {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	width:700px;
+	background:#B89538;
+	text-align:left;
+	padding:0px;
+/*	border:5px solid #B89538; */
+	
+	
+	-moz-border-radius:3px 3px 3px 3px;
+	-webkit-border-radius:3px 3px 3px 3px;
+	border-radius:3px 3px 3px 3px;
+
+	-moz-box-shadow:0px 0px 3px #E3B551;
+	-webkit-box-shadow:0px 0px 3px #E3B551;
+	box-shadow:0px 0px 3px #E3B551;
+}
+
+
+
+#header {
+	height:50px;
+	padding:10px;
+	margin:0px;
+	padding:0px;
+	background-image:url(header_bg.jpg);
+	background-repeat:repeat-x;
+	background-color:#ffffff;
+	-moz-border-radius:3px 3px 0px 0px;
+	-webkit-border-radius:3px 3px 0px 0px;
+	border-radius:3px 3px 0px 0px;
+
+}
+
+#header a {
+	text-decoration:none;
+}
+
+#logo {
+	margin:7px 10px 0px 10px;
+	float:left;
+	height:30px;
+}
+
+#navigation {
+	margin:5px 5px 5px 5px;
+	float:right;
+	padding:5px;
+	color:#D2B97E;
+}
+
+#navigation a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#D2B97E;
+	background:transparent;
+}
+
+#navigation a:hover {
+	font-weight:bold;
+	text-decoration:none;
+	color:#F5E498;
+	background:transparent;
+}
+
+
+#definition {
+	
+	margin:12px 5px 5px 5px;
+	padding:5px;
+	float:left;
+	color:#D7C089;
+	font-size:15px;
+	
+	-moz-border-radius:3px 3px 3px 3px;
+	-webkit-border-radius:3px 3px 3px 3px;
+	border-radius:3px 3px 3px 3px;
+
+}
+
+#content {
+	padding:10px;
+	background:#ffffff;
+	/*border:1px solid #E3B551; */
+}
+
+div.entry {
+	font-family:sans-serif, courier new, courier, times new roman;
+	font-size:16px;
+	text-align:justify;
+}
+
+div.entry img.avatar {
+	float:left;
+	margin:10px;
+
+	-moz-box-shadow:0px 0px 3px #E3B551;
+	-webkit-box-shadow:0px 0px 3px #E3B551;
+	box-shadow:0px 0px 3px #E3B551;
+
+}
+
+
+#footer {
+	padding:5px;
+	color:#D2B97E;
+	font-size:14px;
+	text-align:center;
+}
+
+div.clear {
+	clear:both;
+	font-size:1px;
+}
+
+div.divider {
+	clear:both;
+	height:2px;
+	margin:10px;
+	background:#E1D1A9;
+}
